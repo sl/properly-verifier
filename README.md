@@ -1,5 +1,5 @@
-Properly Verifier
-=================
+Properly Verify
+===============
 
 Properly is a simple property object verification tool. You use it to verify that a properties object has all the right properties.
 
@@ -7,7 +7,7 @@ Install
 -------
 
 ```
-npm install properly-verifier
+npm install properly-verify
 ```
 
 Usage
@@ -15,7 +15,7 @@ Usage
 
 ```javascript
 
-const properly = require('properly-verifier');
+const properly = require('properly-verify');
 
 var myFunction = function(propertiesToVerify) {
   var properties = properly.check(propertiesToVerify)
