@@ -25,25 +25,25 @@ var check = function (properties) {
         return this.fail(property)
       }
     },
-    'optional': function(property, default) {
+    'optional': function(property, fallback) {
       if (!this.properties.hasOwnProperty(property)
         || this.properties[property] === undefined) {
-        if (this.arguments.length < 2) {
+        if (arguments.length < 2) {
           this.missing.push(property);
         } else {
-          this.properties[property] = default;
+          this.properties[property] = fallback;
         }
       }
       return this;
     },
-    'optionalNonNull': function(property, default) {
+    'optionalNonNull': function(property, fallback) {
       if (!this.properties.hasOwnProperty(property)
         || this.properties[property] === undefined
         || this.properties[property] === null) {
-        if (this.arguments.length < 2) {
+        if (arguments.length < 2) {
           this.missing.push(property);
         } else {
-          this.properties[property] = default;
+          this.properties[property] = fallback;
         }
       }
       return this;
