@@ -1,0 +1,32 @@
+{
+  "name": "properly-verify",
+  "version": "1.0.0",
+  "description": "A simple property object verification tool. No more bloat, no more object.hasOwnProperty.",
+  "main": "properly.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sl/properly-verifier.git"
+  },
+  "keywords": [
+    "properties",
+    "property",
+    "verifier",
+    "simple",
+    "proper",
+    "verification"
+  ],
+  "author": "Sam Lazarus",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/brentertz/scapegoat/blob/master/LICENSE-MIT"
+    }
+  ],  
+  "bugs": {
+    "url": "https://github.com/sl/properly-verifier/issues"
+  },
+  "homepage": "https://github.com/sl/properly-verifier#readme"
+}
