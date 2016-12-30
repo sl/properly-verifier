@@ -25,22 +25,26 @@ var check = function (properties) {
         return this.fail(property)
       }
     },
-    'optional': function(property, present) {
-      if (this.properties.hasOwnProperty(property)
-        && this.properties[property] !== undefined) {
-        present(properties[property]);
-      } else {
-        this.missing.push(property);
+    'optional': function(property, default) {
+      if (!this.properties.hasOwnProperty(property)
+        || this.properties[property] === undefined) {
+        if (this.arguments.length < 2) {
+          this.missing.push(property);
+        } else {
+          this.properties[property] = default;
+        }
       }
       return this;
     },
-    'optionalNonNull': function(property, present) {
-      if (this.properties.hasOwnProperty(property)
-        && this.properties[property] !== undefined
-        && this.properties[property] !== null) {
-        present(properties[property]);
-      } else {
-        this.missing.push(property);
+    'optionalNonNull': function(property, default) {
+      if (!this.properties.hasOwnProperty(property)
+        || this.properties[property] === undefined
+        || this.properties[property] === null) {
+        if (this.arguments.length < 2) {
+          this.missing.push(property);
+        } else {
+          this.properties[property] = default;
+        }
       }
       return this;
     },
