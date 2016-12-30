@@ -11,16 +11,15 @@
     "url": "git+https://github.com/sl/properly-verify.git"
   },
   "keywords": [
-    "properties",
     "property",
-    "verifier",
+    "properties",
     "verify",
-    "simple",
-    "proper",
-    "verification"
+    "verifier",
+    "verification",
+    "proper"
   ],
-  "author": "Sam Lazarus",
-  "liscense": "MIT",
+  "author": "Sam Lazarus <tyu.sam@gmail.com> (http://github.com/sl)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sl/properly-verify/issues"
   },
