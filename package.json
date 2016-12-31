@@ -1,6 +1,6 @@
 {
   "name": "properly-verify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple property object verification tool. No more bloat, no more object.hasOwnProperty.",
   "main": "properly.js",
   "scripts": {
