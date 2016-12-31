@@ -47,8 +47,9 @@ After calling properly.check(properties), you get back an object with the form:
 ```javascript
 
 {
-  'properties': Object // The original properties object,
-  'missing': [String] // Any properties missing
+  'properties': Object, // The original properties object
+  'missing': [String], // Any properties missing
+  'failed': Boolean // If any of the previous validation steps failed
 }
 
 ```
